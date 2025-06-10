@@ -17,6 +17,7 @@ function App() {
       <NavBar />
       <HeroSection />
       <ContentSection />
+      {/* <PlayerSearch /> */}
       <PlayerRadar />
       <Footer />
     </main>
