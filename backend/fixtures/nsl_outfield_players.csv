@@ -1,0 +1,151 @@
+name,age,position,team,goals,shots,touches_in_box,aerials_won,possession_won,defensive_actions,touches,dribbles_attempted,chances_created
+Niraj Nepali,18,Defender,Lalitpur FC,0,28,24,6,11,45,226,6,19
+Rajan Nepali,28,Forward,Kathmandu Razers,11,23,18,13,6,16,223,10,19
+Sujan Rai,27,Midfielder,Butwal Lumbini FC,13,12,10,8,22,41,202,21,18
+Rojan Bhandari,31,Forward,Dhangadi FC,13,36,29,15,9,22,151,20,18
+Pratik Nepali,29,Forward,FC Chitwan,3,28,21,18,31,29,224,20,3
+Rajan Thapa,22,Midfielder,Pokhara Thunders,1,47,11,14,26,44,286,6,6
+Santosh Gurung,19,Defender,Jhapa FC,7,41,17,11,35,31,148,24,20
+Roshan Adhikari,28,Midfielder,Lalitpur FC,0,22,13,5,16,18,162,10,14
+Ramesh Nepali,24,Forward,Kathmandu Razers,7,27,28,9,11,33,106,22,5
+Dinesh Pandey,28,Defender,Butwal Lumbini FC,10,50,23,7,33,13,165,38,4
+Sandeep Bhandari,18,Defender,Dhangadi FC,7,8,15,1,16,25,138,7,8
+Pramesh Khadka,24,Midfielder,FC Chitwan,0,21,8,17,33,33,215,25,16
+Prabin Adhikari,23,Forward,Pokhara Thunders,6,16,8,2,33,37,158,24,17
+Kamal Adhikari,26,Defender,Jhapa FC,4,20,7,0,13,25,246,30,14
+Nabin Gurung,20,Defender,Lalitpur FC,7,34,29,8,30,49,123,20,13
+Nabin Bhattarai,18,Defender,Kathmandu Razers,6,7,11,15,31,5,208,32,7
+Bibek Magar,23,Midfielder,Butwal Lumbini FC,1,9,9,7,19,50,158,40,12
+Bibek Thapa,31,Forward,Dhangadi FC,1,10,9,19,37,15,228,40,13
+Amit Khadka,25,Midfielder,FC Chitwan,15,43,10,4,40,16,300,14,19
+Ajay KC,22,Midfielder,Pokhara Thunders,0,23,6,20,15,16,100,16,8
+Prabin Pandey,32,Defender,Jhapa FC,9,37,5,4,35,37,236,32,8
+Dinesh Bista,24,Defender,Lalitpur FC,2,46,7,12,36,44,293,7,15
+Ajay Dhungana,34,Forward,Kathmandu Razers,9,42,17,9,19,38,240,24,10
+Rajan KC,34,Forward,Butwal Lumbini FC,14,30,21,13,34,50,184,7,4
+Pratik Shrestha,35,Defender,Dhangadi FC,2,37,25,13,14,39,116,19,1
+Pratik KC,23,Forward,FC Chitwan,4,42,3,1,21,31,148,32,12
+Prajwol Adhikari,24,Defender,Pokhara Thunders,13,45,26,19,37,45,295,15,0
+Raju Basnet,21,Forward,Jhapa FC,5,29,23,14,11,23,142,19,0
+Rajan Magar,32,Midfielder,Lalitpur FC,14,8,8,12,28,31,179,12,16
+Rajan Shrestha,22,Defender,Kathmandu Razers,0,8,29,14,28,29,237,39,9
+Kamal Khadka,19,Defender,Butwal Lumbini FC,2,50,13,6,33,40,114,28,15
+Aashish Basnet,23,Forward,Dhangadi FC,15,25,29,14,10,33,276,22,5
+Ramesh Adhikari,25,Defender,FC Chitwan,12,28,29,0,6,39,279,16,5
+Niraj Karki,35,Defender,Pokhara Thunders,6,32,16,5,30,16,160,25,20
+Rupesh Rai,20,Forward,Jhapa FC,2,39,18,14,29,49,173,25,0
+Suraj KC,21,Midfielder,Lalitpur FC,0,28,30,9,8,6,119,25,3
+Raju Bhattarai,25,Forward,Kathmandu Razers,9,19,21,5,10,43,208,20,4
+Nabin KC,32,Forward,Butwal Lumbini FC,4,32,8,7,14,48,180,38,11
+Pramesh Magar,31,Defender,Dhangadi FC,13,17,19,3,30,27,211,29,15
+Bishwa Dhungana,24,Defender,FC Chitwan,5,35,20,6,22,38,191,38,2
+Bikash Khadka,29,Forward,Pokhara Thunders,6,32,24,20,17,20,175,5,15
+Niraj Khadka,32,Midfielder,Jhapa FC,3,44,27,10,9,35,191,29,9
+Niraj Dhungana,26,Defender,Lalitpur FC,2,13,8,2,24,18,265,34,10
+Sandeep Khadka,33,Defender,Kathmandu Razers,9,41,9,8,15,15,137,19,10
+Bikash Nepali,28,Forward,Butwal Lumbini FC,11,36,24,20,19,22,182,12,2
+Santosh Khadka,30,Defender,Dhangadi FC,1,30,8,8,22,13,260,32,12
+Anil Bhandari,22,Forward,FC Chitwan,1,42,7,2,9,11,190,13,15
+Suraj Basnet,19,Midfielder,Pokhara Thunders,2,14,4,2,19,17,254,36,11
+Sandeep Maharjan,22,Midfielder,Jhapa FC,11,16,10,4,12,40,292,28,5
+Prajwol Tamang,18,Forward,Lalitpur FC,8,25,10,18,18,39,265,9,3
+Sagar Paudel,30,Defender,Kathmandu Razers,9,45,19,15,36,16,257,26,12
+Sujan KC,21,Midfielder,Butwal Lumbini FC,7,24,7,13,35,50,165,32,6
+Aashish Bhandari,18,Forward,Dhangadi FC,12,35,22,17,32,50,200,36,19
+Rajan Bista,18,Defender,FC Chitwan,13,9,22,15,9,30,190,25,3
+Anil Adhikari,21,Midfielder,Pokhara Thunders,4,19,29,8,11,9,237,12,7
+Ajay Pandey,24,Midfielder,Jhapa FC,2,50,12,1,20,26,287,13,11
+Roshan Magar,28,Midfielder,Lalitpur FC,6,40,15,20,20,26,230,14,3
+Nabin Maharjan,35,Midfielder,Kathmandu Razers,14,20,11,15,21,17,161,11,7
+Pratik Khadka,19,Midfielder,Butwal Lumbini FC,8,50,14,17,37,24,137,35,16
+Rojan Bista,27,Forward,Dhangadi FC,2,40,4,5,25,40,139,16,14
+Rojan Thapa,32,Midfielder,FC Chitwan,9,50,21,13,29,40,255,39,13
+Aashish Shrestha,35,Defender,Pokhara Thunders,2,16,22,5,39,48,263,31,20
+Sunil Limbu,35,Defender,Jhapa FC,5,42,5,12,23,33,265,17,13
+Rupesh Maharjan,27,Defender,Lalitpur FC,15,42,16,19,28,23,149,6,18
+Nabin Basnet,33,Defender,Kathmandu Razers,12,49,9,0,33,18,207,26,15
+Suraj Bista,28,Defender,Butwal Lumbini FC,3,37,15,9,17,44,163,23,4
+Sandeep Gurung,28,Forward,Dhangadi FC,4,10,30,3,39,10,191,28,14
+Anil Bista,30,Defender,FC Chitwan,2,32,5,2,6,11,145,36,0
+Sujan Karki,25,Forward,Pokhara Thunders,9,30,5,18,8,14,182,40,14
+Rupesh Khadka,34,Midfielder,Jhapa FC,13,49,27,15,8,25,249,38,20
+Roshan Karki,24,Midfielder,Lalitpur FC,11,32,4,7,10,22,295,24,4
+Suman Shrestha,31,Defender,Kathmandu Razers,8,5,13,11,33,22,283,33,6
+Dipesh Tamang,18,Defender,Butwal Lumbini FC,15,34,30,4,26,44,151,8,6
+Roshan Khadka,26,Defender,Dhangadi FC,4,42,14,0,32,16,224,37,8
+Bibek Bhattarai,35,Defender,FC Chitwan,7,15,3,17,27,44,162,38,17
+Sunil Bhattarai,34,Midfielder,Pokhara Thunders,2,20,24,14,36,45,229,15,2
+Dipesh Khadka,21,Forward,Jhapa FC,8,17,21,15,18,19,263,24,13
+Bibek Shrestha,18,Defender,Lalitpur FC,3,35,20,16,38,9,219,21,19
+Aashish Limbu,27,Midfielder,Kathmandu Razers,5,50,16,20,8,7,264,10,4
+Dipesh Limbu,23,Midfielder,Butwal Lumbini FC,12,20,6,0,23,19,278,19,15
+Sagar KC,19,Defender,Dhangadi FC,6,13,19,0,10,19,218,39,18
+Suman Nepali,33,Midfielder,FC Chitwan,15,29,14,19,12,50,278,12,9
+Pratik Rai,29,Forward,Pokhara Thunders,14,17,21,13,29,37,224,23,10
+Bimal Bista,33,Forward,Jhapa FC,11,46,13,6,27,47,256,33,3
+Sujan Thapa,28,Forward,Lalitpur FC,12,40,13,8,27,21,187,35,5
+Nabin Karki,24,Midfielder,Kathmandu Razers,7,6,19,8,20,32,271,12,6
+Sujan Gurung,28,Defender,Butwal Lumbini FC,0,15,24,0,36,12,298,6,1
+Bishwa Thapa,19,Forward,Dhangadi FC,7,29,28,2,12,27,242,22,16
+Anil Thapa,21,Forward,FC Chitwan,7,15,24,8,6,25,283,29,11
+Aashish Tamang,18,Defender,Pokhara Thunders,6,43,4,11,36,17,179,9,1
+Prabin Bhandari,19,Defender,Jhapa FC,5,14,8,8,16,48,288,16,14
+Pratik Magar,22,Forward,Lalitpur FC,8,28,22,16,27,14,187,32,19
+Ramesh Maharjan,27,Midfielder,Kathmandu Razers,10,19,14,18,33,36,286,31,10
+Bimal Gurung,28,Midfielder,Butwal Lumbini FC,7,42,20,6,25,7,181,40,10
+Pratik Bista,25,Forward,Dhangadi FC,8,19,13,1,37,40,159,26,14
+Kamal Magar,31,Defender,FC Chitwan,6,25,28,18,28,43,288,33,20
+Rajan Gurung,25,Midfielder,Pokhara Thunders,14,6,12,12,15,39,138,13,7
+Niraj Limbu,35,Midfielder,Jhapa FC,0,34,5,2,26,18,295,9,10
+Prajwol Gurung,28,Midfielder,Lalitpur FC,12,15,3,3,30,5,183,20,13
+Dinesh Nepali,18,Midfielder,Kathmandu Razers,11,12,7,4,22,34,255,10,10
+Suraj Nepali,30,Defender,Butwal Lumbini FC,7,38,16,6,28,14,250,39,17
+Anil Gurung,24,Midfielder,Dhangadi FC,5,7,18,6,31,37,165,24,15
+Suman Thapa,22,Forward,FC Chitwan,3,9,3,16,23,46,115,18,17
+Amit KC,27,Defender,Pokhara Thunders,2,35,22,7,13,22,182,9,4
+Suraj Limbu,25,Midfielder,Jhapa FC,12,8,26,5,37,36,213,9,17
+Dinesh Adhikari,26,Midfielder,Lalitpur FC,15,22,13,16,39,34,122,6,20
+Bibek Paudel,33,Defender,Kathmandu Razers,14,20,22,1,20,41,179,36,15
+Sujan Bista,26,Defender,Butwal Lumbini FC,8,41,10,2,9,46,197,37,20
+Nabin Adhikari,19,Defender,Dhangadi FC,12,31,23,11,24,8,200,7,5
+Kamal Nepali,33,Midfielder,FC Chitwan,14,5,20,10,11,16,248,36,10
+Prajwol Bhandari,35,Midfielder,Pokhara Thunders,7,9,25,12,30,16,281,19,16
+Pramesh Karki,33,Forward,Jhapa FC,10,19,7,14,18,49,154,8,10
+Pramesh Thapa,29,Forward,Lalitpur FC,9,26,29,16,37,28,157,16,2
+Ajay Bista,35,Midfielder,Kathmandu Razers,0,17,10,12,31,7,296,39,15
+Bishwa Bhandari,26,Midfielder,Butwal Lumbini FC,3,49,8,17,29,41,225,18,4
+Rojan Karki,31,Defender,Dhangadi FC,13,13,6,19,29,47,290,29,3
+Ramesh Shrestha,20,Defender,FC Chitwan,12,43,17,17,6,37,256,40,18
+Suman Maharjan,29,Forward,Pokhara Thunders,9,24,5,9,13,43,278,12,9
+Sagar Gurung,19,Forward,Jhapa FC,1,24,10,13,25,31,265,16,17
+Bibek Pandey,26,Defender,Lalitpur FC,14,46,12,10,37,6,209,26,16
+Bikash Dhungana,21,Midfielder,Kathmandu Razers,2,44,4,14,34,8,172,20,17
+Niraj Gurung,24,Forward,Butwal Lumbini FC,2,8,10,20,8,50,123,30,16
+Niraj Shrestha,33,Midfielder,Dhangadi FC,11,30,27,19,21,49,193,26,20
+Suman KC,32,Midfielder,FC Chitwan,3,30,29,18,9,28,206,29,5
+Sagar Bista,22,Midfielder,Pokhara Thunders,12,35,26,4,22,48,214,19,7
+Sagar Bhandari,28,Midfielder,Jhapa FC,15,26,7,8,26,28,289,39,15
+Rupesh Tamang,28,Midfielder,Lalitpur FC,3,20,30,7,14,32,128,22,12
+Bishwa Adhikari,35,Forward,Kathmandu Razers,5,11,13,18,17,48,104,34,20
+Rajan Bhattarai,23,Midfielder,Butwal Lumbini FC,7,13,20,11,32,38,271,19,16
+Anil Khadka,21,Defender,Dhangadi FC,12,30,14,7,20,27,270,34,12
+Rojan Khadka,20,Midfielder,FC Chitwan,14,24,25,5,14,11,295,37,18
+Sunil KC,25,Midfielder,Pokhara Thunders,6,30,26,20,26,46,132,25,7
+Pramesh Dhungana,23,Forward,Jhapa FC,10,47,19,2,25,39,221,28,10
+Prajwol Paudel,30,Midfielder,Lalitpur FC,13,17,13,0,25,7,247,29,16
+Suraj Rai,27,Defender,Kathmandu Razers,12,26,6,1,32,38,179,20,16
+Bishwa Pandey,35,Forward,Butwal Lumbini FC,15,15,4,6,37,49,269,26,0
+Dipesh Basnet,32,Midfielder,Dhangadi FC,0,41,17,6,30,37,245,20,0
+Amit Maharjan,32,Midfielder,FC Chitwan,4,15,4,9,16,41,192,16,19
+Sujan Bhattarai,18,Defender,Pokhara Thunders,15,5,18,1,40,23,213,19,4
+Nabin Magar,35,Forward,Jhapa FC,0,41,26,8,5,25,210,35,3
+Sandeep Limbu,31,Midfielder,Lalitpur FC,8,32,15,11,17,20,269,8,12
+Bibek Rai,24,Defender,Kathmandu Razers,3,15,23,1,17,41,262,28,18
+Pratik Gurung,33,Defender,Butwal Lumbini FC,4,20,9,17,33,49,201,20,3
+Sandeep Karki,31,Defender,Dhangadi FC,4,15,23,7,12,33,104,20,6
+Ajay Shrestha,23,Midfielder,FC Chitwan,13,16,17,1,31,26,198,21,6
+Sunil Pandey,29,Defender,Pokhara Thunders,15,12,7,11,32,18,171,35,12
+Raju Nepali,32,Forward,Jhapa FC,6,22,8,6,21,12,193,5,1
+Sagar Tamang,27,Forward,Lalitpur FC,4,48,29,2,37,39,241,16,18
+Prajwol Thapa,18,Forward,Kathmandu Razers,4,7,27,5,29,50,130,25,5
+Santosh Tamang,34,Midfielder,Butwal Lumbini FC,9,37,24,9,25,47,222,12,9
