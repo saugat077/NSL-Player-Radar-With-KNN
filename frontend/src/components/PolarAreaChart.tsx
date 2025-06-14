@@ -1,6 +1,6 @@
 import React from "react";
 import { PolarArea } from "react-chartjs-2";
-import { ChartOptions } from "chart.js";
+import type { ChartOptions } from "chart.js";
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 import {
   Chart as ChartJS,
