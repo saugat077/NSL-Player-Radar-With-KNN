@@ -1,7 +1,5 @@
 from sqlalchemy import Column, Integer, String, Float
-from sqlalchemy.ext.declarative import declarative_base
-
-Base = declarative_base()
+from database import Base
 
 class OutfieldPlayer(Base):
     __tablename__ = "outfield_players"
@@ -22,20 +20,10 @@ class OutfieldPlayer(Base):
     dribbles_attempted = Column(Integer)
     chances_created = Column(Integer)
 
-class Goalkeeper(Base):
-    __tablename__ = "goalkeepers"
 
+class User(Base):
+    __tablename__ = 'users'
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, nullable=False)
-    age = Column(Integer)
-    team = Column(String)
-
-    saves = Column(Integer)
-    shots_faced = Column(Integer)
-    save_percentage = Column(Float)
-    shot_stop_percentage = Column(Float)
-    penalty_saves = Column(Integer)
-    punches = Column(Integer)
-    catches = Column(Integer)
-    clean_sheets = Column(Integer)
-    pass_completion = Column(Float)  # percentage
+    username = Column(String, unique=True, index=True)
+    email = Column(String, unique=True, index=True)
+    password = Column(String)

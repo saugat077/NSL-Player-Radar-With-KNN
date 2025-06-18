@@ -1,10 +1,20 @@
-from fastapi import FastAPI, Depends, Query
+from fastapi import FastAPI, Depends, HTTPException, Response, Request, Query
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 from models import OutfieldPlayer
-from database import get_db
+from models import User
+from database import get_db, engine, Base
 from sqlalchemy import func
+from starlette.responses import JSONResponse
+from auth import hash_password, verify_password
+from schemas import UserCreate
+
+import uuid
 from knn_model import get_similar_players_knn, FEATURE_COLUMNS  # Changed import
+
+Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 # CORS origins: यहाँ frontend को URL राख
@@ -24,6 +34,8 @@ app.add_middleware(
     allow_methods=["*"],         # GET, POST, PUT, DELETE सबै method हरु अनुमति
     allow_headers=["*"],         # सबै headers अनुमति
 )
+
+sessions = {}
 
 @app.get("/")
 def root():
@@ -101,4 +113,51 @@ def similar_players(player_id: int, db: Session = Depends(get_db)):
     return {
         "selected": player_to_dict(result["selected"]),
         "similar": [player_to_dict(p) for p in result["similar"]]
+    }
+
+
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+# Dummy check, replace with actual DB check
+fake_user = {"email": "user@example.com", "hashed_password": pwd_context.hash("password123")}
+
+class LoginRequest(BaseModel):
+    email: str
+    password: str
+
+@app.post("/register")
+def register(data: UserCreate, db: Session = Depends(get_db)):
+    if db.query(User).filter(User.email == data.email).first():
+        raise HTTPException(status_code=400, detail="User already exists")
+
+    new_user = User(
+        username=data.username,   # ✅ add username here
+        email=data.email,
+        password=hash_password(data.password)
+    )
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)  # optional: to get the generated ID, etc.
+
+    return {"message": "User registered", "user_id": new_user.id}
+
+
+@app.post("/login")
+def login(data: LoginRequest, response: Response, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.email == data.email).first()
+    if not user or not verify_password(data.password, user.password):
+        raise HTTPException(status_code=401, detail="Invalid credentials")
+
+    session_token = str(uuid.uuid4())
+    sessions[session_token] = user.id
+    response.set_cookie(key="session", value=session_token, httponly=True)
+
+    return {
+        "message": "Login successful",
+        "token": session_token,
+        "user": {
+            "id": user.id,
+            "username": user.username,
+            "email": user.email
+        }
     }
