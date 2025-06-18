@@ -122,19 +122,6 @@ export default function LoginDialog({
   };
 
   const handleLogin = async () => {
-    if (!email.trim()) {
-      toast.error("Email is required.");
-      return;
-    }
-    if (!validateEmail(email)) {
-      toast.error("Invalid email format.");
-      return;
-    }
-    if (!password) {
-      toast.error("Password is required.");
-      return;
-    }
-
     setLoading(true);
     try {
       const res = await fetch("http://localhost:8000/login", {
@@ -142,26 +129,30 @@ export default function LoginDialog({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
-
+  
+      const data = await res.json();
+      console.log("LOGIN RESPONSE", data);
+  
       if (res.ok) {
-        const { token, username } = await res.json();
+        const { token, user } = data;
         localStorage.setItem("token", token);
-        localStorage.setItem("username", username);
+        localStorage.setItem("username", user.username); // ✅ Set correctly
         setIsLoggedIn(true);
-        setUsername(username);
+        setUsername(user.username); // ✅ Fix the undefined issue
         toast.success("Login successful");
         setDialogOpen(false);
         setEmail("");
         setPassword("");
       } else {
-        toast.error("Invalid credentials");
+        toast.error(data.detail || "Invalid credentials");
       }
-    } catch (error) {
-      toast.error("Network error during login.");
+    } catch (err) {
+      toast.error("Network error. Please try again.");
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>

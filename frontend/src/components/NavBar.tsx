@@ -3,6 +3,14 @@ import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import LoginDialog from "@/components/LoginDialog";
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { toast } from "sonner"; // ✅ You forgot to import this in NavBar
 
 interface NavBarProps {
   isLoggedIn: boolean;
@@ -11,6 +19,7 @@ interface NavBarProps {
 
 export default function NavBar({ isLoggedIn, setIsLoggedIn }: NavBarProps) {
   const [username, setUsername] = useState("");
+  const [logoutConfirmOpen, setLogoutConfirmOpen] = useState(false); // ✅ FIXED: declare here
 
   useEffect(() => {
     const storedUsername = localStorage.getItem("username");
@@ -20,13 +29,6 @@ export default function NavBar({ isLoggedIn, setIsLoggedIn }: NavBarProps) {
       setUsername(storedUsername);
     }
   }, [setIsLoggedIn]);
-
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("username");
-    setIsLoggedIn(false);
-    setUsername("");
-  };
 
   return (
     <nav className="bg-white w-full relative z-[0] -mt-[40px]" style={{ fontFamily: "Integral CF" }}>
@@ -54,19 +56,48 @@ export default function NavBar({ isLoggedIn, setIsLoggedIn }: NavBarProps) {
               username={username}
               setUsername={setUsername}
             />
+
             {isLoggedIn && (
-              <Button onClick={handleLogout} className="bg-red-500 hover:bg-red-600 text-white">
-                Logout
-              </Button>
+              <>
+                <Button
+                  onClick={() => setLogoutConfirmOpen(true)}
+                  className="bg-red-500 hover:bg-red-600 text-white"
+                >
+                  Logout
+                </Button>
+
+                <Dialog open={logoutConfirmOpen} onOpenChange={setLogoutConfirmOpen}>
+                  <DialogContent className="sm:max-w-[400px] text-center">
+                    <DialogHeader>
+                      <DialogTitle>Confirm Logout</DialogTitle>
+                    </DialogHeader>
+                    <p className="text-gray-600 mb-4">Are you sure you want to log out?</p>
+                    <div className="flex justify-center gap-4">
+                      <Button
+                        variant="outline"
+                        onClick={() => setLogoutConfirmOpen(false)}
+                        className="border-gray-400"
+                      >
+                        Cancel
+                      </Button>
+                      <Button
+                        className="bg-red-500 hover:bg-red-600 text-white"
+                        onClick={() => {
+                          localStorage.removeItem("token");
+                          localStorage.removeItem("username");
+                          setIsLoggedIn(false);
+                          setUsername("");
+                          setLogoutConfirmOpen(false);
+                          toast.success("Logged out successfully");
+                        }}
+                      >
+                        Logout
+                      </Button>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+              </>
             )}
-            {/* <div className="flex items-center space-x-2 bg-white px-3 py-1 rounded-md shadow-sm">
-              <Search className="w-4 h-4 text-gray-400" />
-              <Input
-                className="w-[150px] h-[15px] border-none focus-visible:ring-0 text-sm"
-                type="text"
-                placeholder="Search..."
-              />
-            </div> */}
           </div>
         </div>
       </div>
