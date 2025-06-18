@@ -102,18 +102,8 @@ def similar_players(player_id: int, db: Session = Depends(get_db)):
     if not result:
         return {"error": "Player not found or insufficient data"}
 
-    def player_to_dict(p):
-        return {
-            "id": p.id,
-            "name": p.name,
-            "team": p.team,
-            **{attr: getattr(p, attr) for attr in FEATURE_COLUMNS}
-        }
+    return result  # Already JSON-serializable
 
-    return {
-        "selected": player_to_dict(result["selected"]),
-        "similar": [player_to_dict(p) for p in result["similar"]]
-    }
 
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")

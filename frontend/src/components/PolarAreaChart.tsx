@@ -169,8 +169,9 @@ const PolarAreaChart: React.FC<Props> = ({ selectedPlayer, similarPlayers, metri
           return (
             <div key={player.id} className="w-[180px] h-[200px] mx-auto">
               <h3 className="text-sm font-semibold text-center mb-1">
-                {player.name} ({player.team})
-              </h3>
+  {player.name} - {player.similarity}% ({player.team})
+</h3>
+
               <PolarArea data={playerData} options={similarChartOptions} width={180} height={180} />
             </div>
           );
