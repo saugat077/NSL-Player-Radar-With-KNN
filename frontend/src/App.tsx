@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Toaster } from "sonner"; 
 import "./App.css";
 import TopClubs from "./components/TopClubs";
 import NavBar from "./components/NavBar";
@@ -12,13 +13,14 @@ export default function App() {
 
   return (
     <main className="w-full min-h-screen bg-white">
+      <Toaster position="top-center" /> {/* <-- Add this once */}
       <TopClubs />
       {/* ⬇️ give NavBar access to the auth state */}
       <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       <HeroSection />
       <ContentSection />
       {/* Show radar only when authenticated */}
-      {isLoggedIn && <PlayerRadar />}
+      {isLoggedIn ? <PlayerRadar /> : <p>Please log in to see player insights.</p>}
       <Footer />
     </main>
   );

@@ -75,7 +75,7 @@ const selectedChartOptions: ChartOptions<'polarArea'> = {
   },
   plugins: {
     legend: {
-      display: false,
+      display: true,
     },
     datalabels: {
       display: true,
