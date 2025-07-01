@@ -57,3 +57,4 @@ def get_similar_players_knn(db: Session, player_id: int, n_neighbors: int = 5):
         },
         "similar": similar_players[:4]
     }
+

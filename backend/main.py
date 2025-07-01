@@ -151,3 +151,9 @@ def login(data: LoginRequest, response: Response, db: Session = Depends(get_db))
             "email": user.email
         }
     }
+
+
+
+
+
+

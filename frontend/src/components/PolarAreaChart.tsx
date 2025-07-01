@@ -182,3 +182,5 @@ const PolarAreaChart: React.FC<Props> = ({ selectedPlayer, similarPlayers, metri
 };
 
 export default PolarAreaChart;
+
+
